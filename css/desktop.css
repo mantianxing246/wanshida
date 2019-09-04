@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'MarkOffcPro';
+    src: url('../font/MarkOffcPro.eot');
+    src: url('../font/MarkOffcPro.eot') format('embedded-opentype'),
+         url('../font/MarkOffcPro.woff2') format('woff2'),
+         url('../font/MarkOffcPro.woff') format('woff'),
+         url('../font/MarkOffcPro.ttf') format('truetype'),
+         url('../font/MarkOffcPro.svg#MarkOffcPro') format('svg');
+}
+@font-face {
+    font-family: 'MarkOffcProBook';
+    src: url('../font/MarkOffcProBook.eot');
+    src: url('../font/MarkOffcProBook.eot') format('embedded-opentype'),
+         url('../font/MarkOffcProBook.woff2') format('woff2'),
+         url('../font/MarkOffcProBook.woff') format('woff'),
+         url('../font/MarkOffcProBook.ttf') format('truetype'),
+         url('../font/MarkOffcProBook.svg#MarkOffcProBook') format('svg');
+}
+@font-face {
+    font-family: 'MarkOffcProLight';
+    src: url('../font/MarkOffcProLight.eot');
+    src: url('../font/MarkOffcProLight.eot') format('embedded-opentype'),
+         url('../font/MarkOffcProLight.woff2') format('woff2'),
+         url('../font/MarkOffcProLight.woff') format('woff'),
+         url('../font/MarkOffcProLight.ttf') format('truetype'),
+         url('../font/MarkOffcProLight.svg#MarkOffcProLight') format('svg');
+}
+@font-face {
+    font-family: 'MarkForMCNarrowW00Medium';
+    src: url('../font/MarkForMCNarrowW00-Medium.eot');
+    src: url('../font/MarkForMCNarrowW00-Medium.eot') format('embedded-opentype'),
+         url('../font/MarkForMCNarrowW00-Medium.woff2') format('woff2'),
+         url('../font/MarkForMCNarrowW00-Medium.woff') format('woff'),
+         url('../font/MarkForMCNarrowW00-Medium.ttf') format('truetype'),
+         url('../font/MarkForMCNarrowW00-Medium.svg#MarkForMCNarrowW00Medium') format('svg');
+}
+@font-face {
+    font-family: 'MarkWebPro-MediumItalicW01Rg';
+    src: url('../font/MarkWebPro-MediumItalicW01Rg.eot');
+    src: url('../font/MarkWebPro-MediumItalicW01Rg.eot') format('embedded-opentype'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.woff2') format('woff2'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.woff') format('woff'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.ttf') format('truetype'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.svg#MarkWebPro-MediumItalicW01Rg') format('svg');
+}
+@font-face {
+    font-family: 'MarkWebProLightW01Regular';
+    src: url('../font/MarkWebPro-LightW01Regular.eot');
+    src: url('../font/MarkWebPro-LightW01Regular.eot') format('embedded-opentype'),
+         url('../font/MarkWebPro-LightW01Regular.woff2') format('woff2'),
+         url('../font/MarkWebPro-LightW01Regular.woff') format('woff'),
+         url('../font/MarkWebPro-LightW01Regular.ttf') format('truetype'),
+         url('../font/MarkWebPro-LightW01Regular.svg#MarkWebProLightW01Regular') format('svg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+        height: 100%;
+        font-family: "MarkOffcPro"
+}
+.background-ff681b{
+    background-color: #ff681b;
+}
+.color-ff671c{
+    color: #ff671c;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+a{
+    color: #fffeff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #fffeff;
+}
+
+body{
+    background: #000;
+}
+.background-color{
+    /* background: #000000; */
+    padding: 50px;
+    width: 1280px;
+    margin: auto;
+}
+.container-body{
+    /* width: 100%; */
+    /* background: #000000; */
+    /* background: url("../images/background-image.png") no-repeat; */
+    /* background-size: 100%; */
+    /* width: 1280px;
+    overflow-x: hidden; */
+}
+.bj{
+    position: absolute;
+    background-size: cover;
+}
+.ipad-style{
+    width: 1280px;
+    background: red;
+    overflow: hidden;background: url('../images/background-image.png') no-repeat -200px;
+}
+.container{
+    /* padding: 0; */
+    max-width: 1280px;
+    margin: auto;
+}
+.left-logo{
+    margin: 30px 0 0;
+    height: 124px;
+    background: url('../images/logo.png') no-repeat;
+    /* background-size: 100%; */
+}
+.container-body h2{
+    color: #ffffff;
+    margin: 44px 0;
+    font-size: 52px;
+    font-family: "MarkOffcProBook";
+    white-space: nowrap;
+}
+.priceless{
+    margin-bottom: 26px;
+    font-size: 32px;
+    font-family: "MarkOffcProBook";
+}
+.priceless i{
+    font-family: "MarkWebPro-MediumItalicW01Rg";
+    font-style: initial;
+}
+.priceless sup{
+    font-size: 20px;
+}
+.introduce{
+    color: #fff;
+    font-family: "MarkOffcProLight";
+    font-size:18px;
+}
+.form-row:nth-of-type(6){
+    height: auto;
+    margin-bottom: 18px;
+}
+.form-controls{
+    background: #000;
+    border: 1px solid #fffeff;
+    height: 48px;
+    color: #ffffff;
+    font-family: "OpenSans";   
+    outline: none;
+    border-radius: 5px;
+    padding-left: 16px;
+    width: 100%;
+    position:relative;
+    font-family: "MarkOffcPro";   
+    font-size:16px;
+}
+.form-controls:focus{
+    outline: none !important;
+}
+.form-controls::-webkit-input-placeholder{
+    color: #e7e7e7;
+} /* 使用webkit内核的浏览器 */
+.form-controls:-moz-placeholder{
+    color: #e7e7e7;
+} /* Firefox版本4-18 */
+.form-controls::-moz-placeholder{
+    color: #e7e7e7;
+} /* Firefox版本19+ */
+.form-controls:-ms-input-placeholder{
+    color: #e7e7e7;
+} /* IE浏览器 */
+.flex-container input {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: none;   
+    display: none;
+    font-family: "MarkOffcPro";
+    font-size:16px;
+}
+.checkbox-style{
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    float: left; 
+}
+.input-background{
+    background: url("../images/projects-sprite@2x.png") no-repeat -146px -123px;
+}
+.agree{
+    color: #fffeff;
+    font-family: "MarkOffcPro";
+    outline: none;
+}
+.agree span{
+    text-decoration: underline;
+}
+.sign-in{
+    height: 50px;
+    background: #fafafa;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    margin-bottom:18px;
+    text-decoration: none;
+    color: black;
+    font-family: "MarkOffcPro";
+}
+.sign-in:hover{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    width: 100%;
+    background: #ff681b;
+    border: none;
+    font-family: "MarkOffcPro";
+    font-size: 18px;
+}
+.button:hover{
+    background: #ff681b;
+    border: none;
+}
+.bottom,.bottom-contanier{
+    color: #e9e9e9;
+}
+.bottom{
+    margin-top: 50px;
+    /* transform: scale(0.9); */
+    font-family: "MarkOffcPro";
+}
+.row{
+    overflow: hidden;
+    font-family: "MarkOffcPro";
+}
+.bottom-contanier{
+    margin: 46px auto 62px;
+    font-family: "MarkOffcPro";
+    overflow: hidden;
+    float: left;
+}
+.bottom-contanier div{
+    margin: 0 35px;
+    font-family: "MarkOffcPro";
+    cursor: pointer;
+    float: left;
+}
+
+/* 弹框 */
+.dialog,.dialog2{
+    width: 300px;
+    height: 150px;
+    position:fixed;
+    top: 50%;
+    margin-left: -100px;
+    left:50%;
+    margin-top: -50px;
+    background: white;
+    display: none;
+    text-align: center;
+}
+.dialog-title{
+    height: 30px;
+    background: gray;
+    line-height:30px;
+    position: relative;
+}
+.dialog-title span{
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+}
+.dialog-container{
+    line-height: 120px;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.setheight{
+    height: 30px;
+    line-height: 12px;
+    position: relative;
+}
+.setheight span{
+    position: absolute;
+    bottom: 4px;
+}
+.sign-success{
+    background-color: rgb(92, 184, 92); 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color:white;
+    margin-right: 4px;
+}
+.verify-msg{
+    font-size: 12px;
+}

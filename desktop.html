@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tap To Tokyo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/verify.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./icon.ico">
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="isIpad">
+        <img src="./images/background-image.png" class="bj" />
+        <div class="background-color">
+            <div class="container-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="left-logo"></div>
+                            <h2>Tap on in Sydney.<br />Tap off in Tokyo.</h2>
+                            <p class="priceless color-ff671c">Start something
+                                <i>Priceless</i><sup>&reg;</sup></span></p>
+                            <p class="introduce">Used your Mastercard <sup
+                                    style="margin-right: 4px;margin-left:-4px;">&reg;</sup>to tap onto Sydney trains
+                                and ferries? Register below for your chance to win
+                                the ultimate Rugby World Cup 2019<sup>TM</sup> experience
+                                to see the Australia v Wales match in Tokyo stadium.
+                            </p>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id="firstNameError">Incorrect format.
+                                                Only letters allowed.</span></div>
+                                        <input type="text" class="form-controls" placeholder="First name" id='firstName'
+                                            autocomplete="off">
+                                    </div>
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id="lastNameError">Incorrect format.
+                                                Only
+                                                letters allowed.</span></div>
+                                        <input type="text" class="form-controls" placeholder="Last name" id='lastName'
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id="phoneError">Incorrect format.
+                                                Only
+                                                letters allowed.</span></div>
+                                        <input type="text" class="form-controls" placeholder="Phone" id='phone'
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id='emailError'>Incorrect format.
+                                                Only
+                                                letters allowed.</span></div>
+                                        <input type="text" class="form-controls" placeholder="Email" id='email'
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id='postcodeError'>Incorrect format.
+                                                Only
+                                                letters allowed.</span></div>
+                                        <input type="text" class="form-controls" placeholder="Postcode" id='postcode'
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-row" style=" margin-bottom: 18px;">
+                                    <div class="col">
+                                        <div class="setheight"><span class="error" id='agreeError'>Please read terms and
+                                                conditions and select agree to proceed.</span></div>
+                                        <div class="flex-container">
+                                            <input type="checkbox" id='agree'>
+                                            <div class="checkbox-style"></div>
+                                            <span class="agree"> I agree to the <span class="TNC"
+                                                    style="cursor:pointer"><a
+                                                        href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/terms-conditions.html"
+                                                        target="_blank">Terms and Conditions</a></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <a class="sign-in">I am not a Robot.</a>
+                                        <div id='mpanel'></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <a class="btn  btn-lg button" role="button" style="color: #fff;">Submit</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm"></div>
+                        <div class="col-sm"></div>
+                    </div>
+                    <div class="row">
+                        <div class="bottom">
+                            The Rugby World Cup 2019 logo TM &copy; Rugby World Cup Limited 2015. All rights reserved.
+                            Mastercard
+                            is a registered trademark, and
+                            the circles design is a trademark of Mastercard International Incorporated.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bottom-contanier">
+                            <div class="TNC"><a
+                                    href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/terms-conditions.html"
+                                    target="_blank">Terms and Conditions</a></div>
+                            <div class='Privacy'><a
+                                    href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/privacy-notice.html"
+                                    target="_blank">Privacy Policy</a></div>
+                            <div class="ContactUs"><a href="https://www.mastercard.com.au/en-au/contact-us.html"
+                                    target="_blank">Contact us</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog">
+            <div class="dialog-title">
+
+                <span>×</span>
+            </div>
+            <div class="dialog-container">Register Successfully!</div>
+        </div>
+
+        <div class="dialog2">
+            <div class="dialog-title">
+                <span>×</span>
+            </div>
+            <div class="dialog-container">Register Successfully!</div>
+        </div>
+    </div>
+</body>
+<script src='./js/jquery.js'></script>
+<script src="./js/desktop.js"></script>
+<script src="./js/verify.js"></script>
+<script src="./js/md5.js"></script>
+</html>

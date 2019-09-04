@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'MarkOffcPro';
+    src: url('../font/MarkOffcPro.eot');
+    src: url('../font/MarkOffcPro.eot') format('embedded-opentype'),
+         url('../font/MarkOffcPro.woff2') format('woff2'),
+         url('../font/MarkOffcPro.woff') format('woff'),
+         url('../font/MarkOffcPro.ttf') format('truetype'),
+         url('../font/MarkOffcPro.svg#MarkOffcPro') format('svg');
+}
+@font-face {
+    font-family: 'MarkOffcProBook';
+    src: url('../font/MarkOffcProBook.eot');
+    src: url('../font/MarkOffcProBook.eot') format('embedded-opentype'),
+         url('../font/MarkOffcProBook.woff2') format('woff2'),
+         url('../font/MarkOffcProBook.woff') format('woff'),
+         url('../font/MarkOffcProBook.ttf') format('truetype'),
+         url('../font/MarkOffcProBook.svg#MarkOffcProBook') format('svg');
+}
+@font-face {
+    font-family: 'MarkOffcProLight';
+    src: url('../font/MarkOffcProLight.eot');
+    src: url('../font/MarkOffcProLight.eot') format('embedded-opentype'),
+         url('../font/MarkOffcProLight.woff2') format('woff2'),
+         url('../font/MarkOffcProLight.woff') format('woff'),
+         url('../font/MarkOffcProLight.ttf') format('truetype'),
+         url('../font/MarkOffcProLight.svg#MarkOffcProLight') format('svg');
+}
+@font-face {
+    font-family: 'MarkForMCNarrowW00Medium';
+    src: url('../font/MarkForMCNarrowW00-Medium.eot');
+    src: url('../font/MarkForMCNarrowW00-Medium.eot') format('embedded-opentype'),
+         url('../font/MarkForMCNarrowW00-Medium.woff2') format('woff2'),
+         url('../font/MarkForMCNarrowW00-Medium.woff') format('woff'),
+         url('../font/MarkForMCNarrowW00-Medium.ttf') format('truetype'),
+         url('../font/MarkForMCNarrowW00-Medium.svg#MarkForMCNarrowW00Medium') format('svg');
+}
+@font-face {
+    font-family: 'MarkWebPro-MediumItalicW01';
+    src: url('../font/MarkWebPro-MediumItalicW01Rg.eot');
+    src: url('../font/MarkWebPro-MediumItalicW01Rg.eot') format('embedded-opentype'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.woff2') format('woff2'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.woff') format('woff'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.ttf') format('truetype'),
+         url('../font/MarkWebPro-MediumItalicW01Rg.svg#MarkWebPro-MediumItalicW01') format('svg');
+}
+/* @font-face {
+    font-family: 'MarkOffcForMCMediumItalic';
+    src: url('../font/MarkWebPro-LightW01Regular.eot');
+    src: url('../font/MarkWebPro-LightW01Regular.eot') format('embedded-opentype'),
+         url('../font/MarkWebPro-LightW01Regular.woff2') format('woff2'),
+         url('../font/MarkWebPro-LightW01Regular.woff') format('woff'),
+         url('../font/MarkWebPro-LightW01Regular.ttf') format('truetype'),
+         url('../font/MarkWebPro-LightW01Regular.svg#MarkOffcForMCMediumItalic') format('svg');
+} */
+*{
+    margin:0;
+    padding: 0;
+}
+*{ touch-action: manipulation;}
+input,select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+
+
+body{
+    cursor: pointer;
+}
+.container-top{
+    /* background: red; */
+    /* height:7.5rem; */
+    /* background: url("../images/banner-logo2.png") no-repeat; */
+    /* background-size: 100%; */
+    position: relative;
+}
+.container-top img{
+    width: 100%;
+    display: block;
+}
+.conditions{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    font-family: "MarkOffcPro";
+}
+.conditions div{
+    height: 1.625rem;
+    color: #e9e9e9;
+    line-height:  1.625rem;
+    background: #1a1a1a;
+    padding-left: 0.625rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+.agree{
+    font-size:14px;
+}
+.outer-link a,.agree a{
+    color: #e9e9e9;
+    text-decoration: none;
+}
+.outer-link a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*.conditions div a:hover,.agree a:hover{
+    color: #e9e9e9;
+    text-decoration: none;
+}*/
+.conditions div:nth-of-type(1){
+    height: 1.9375rem;
+    padding-right: 0.8125rem;
+    display: flex;
+    align-items: center;
+    flex-direction:row-reverse;
+}
+.conditions img{
+    width: 0.625rem;
+    height: 0.625rem;
+    cursor: pointer;
+}
+.top-layout,.body-container{
+    padding: 0 0.625rem;
+}
+.top-layout{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.top-layout-right{
+    width: 30px;
+    height: 30px;
+    background: url("../images/navigation.png") no-repeat center;
+    cursor: pointer;
+}
+.body-container{
+    background-color: #000000;
+    color: aliceblue;
+}
+.body-top h2{
+    padding-top: 0.8125rem;
+    margin-bottom: 0.75rem;
+    font-size: 32px;
+    /* font-family: "MarkForMCNarrowW00-Medium"; */
+    /* font-family: "MarkForMCNarrowW00-Bold"; */
+    font-family: "MarkOffcProBook";
+    /* font-family: "OpenSans-bold"; */
+}
+.priceless{
+    color: #ff6819;
+    font-size: 22px;
+    font-family: "MarkOffcProBook";
+}
+.priceless i{
+    font-family: "MarkWebPro-MediumItalicW01";
+}
+.introduce{
+    color: #fff;
+    margin: 0.9375rem 0 0.75rem;
+    font-size: 14px;
+    font-family: "MarkOffcProLight";
+}
+.agree,.verification{
+    margin-bottom: 0.625rem;
+}
+.agree{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: "MarkOffcPro";
+}
+.agree input{
+    margin-right: 0.625rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.input-background{
+    background: url("../images/projects-sprite@2x.png") no-repeat -145px -122px;
+}
+span span{
+    text-decoration: underline;
+}
+.robot{
+    flex:1;
+}
+.input-style,.button-style{
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.input-style{
+    background: #000000;
+    padding-left: 0.625rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "MarkOffcPro";  
+    font-size:16px;
+}
+.input-style::-webkit-input-placeholder{
+    color: #e7e7e7;
+} /* 使用webkit内核的浏览器 */
+.input-style:-moz-placeholder{
+    color: #e7e7e7;
+} /* Firefox版本4-18 */
+.input-style::-moz-placeholder{
+    color: #e7e7e7;
+} /* Firefox版本19+ */
+.input-style:-ms-input-placeholder{
+    color: #e7e7e7;
+} /* IE浏览器 */
+.button-style{
+    background: #ff681b;
+    color: #fef9f5;
+    border: none;
+    cursor: pointer;
+    font-family: "MarkOffcPro";
+    font-size: 18px;
+}
+.buttom-character{
+    color: #d9d9d9;
+    text-align: center;
+    padding:0.625rem  0 1.5rem;
+    font-family: "MarkOffcProBook";
+}
+.error{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.setheight{
+    height: 24px;
+    line-height: 12px;
+    position: relative;
+}
+.setheight span{
+    position: absolute;
+    bottom: 4px;
+}
+.setheight:nth-of-type(3){
+    height: 30px;
+}
+
+/* 弹框 */
+.dialog,.dialog2{
+    width: 300px;
+    height: 100px;
+    position:fixed;
+    top: 50%;
+    margin-left: -150px;
+    left:50%;
+    margin-top: -50px;
+    background: white;
+    display: none;
+    text-align: center;
+    z-index: 9999;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.dialog-title{
+    height: 30px;
+    background: gray;
+    line-height:30px;
+    position: relative;
+}
+.dialog-title span{
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    width: 30px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.dialog-container-body{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+.sign-in{
+    height: 50px;
+    background: #fafafa;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    margin-bottom:18px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sign-success{
+    background-color: rgb(92, 184, 92); 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color:white;
+    margin-right: 4px;
+}

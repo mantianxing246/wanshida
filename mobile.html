@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tap To Tokyo</title>
+    <script src="./js/flexable.js"></script>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/verify.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/ipad.css" media="screen and (min-width: 768px)"> -->
+</head>
+
+<body>
+    <div class="container-top">
+        <img src="./images/banner-logo2.png" alt="" style="width: 100%;" id="img-show">
+        <div class="top-layout">
+            <div class="top-layout-left"></div>
+            <div class="top-layout-right">
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="close">
+                <img src="./images/close.png" alt="">
+            </div>
+            <div class="outer-link"><a
+                    href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/terms-conditions.html"
+                    target="_blank">Terms and Conditions</a></div>
+            <div class="outer-link"><a
+                    href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/privacy-notice.html"
+                    target="_blank">Privacy Policy</a></div>
+            <div class="outer-link"><a href="https://www.mastercard.com.au/en-au/contact-us.html" target="_blank">Contact
+                    us</a></div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="body-top">
+            <h2>Tap on in Sydney.<br />Tap off in Tokyo.</h2>
+            <p class="priceless">Start something <span style="font-style:italic;">Priceless</span><sup>&reg;</sup></p>
+            <p class="introduce">Used your Mastercard <sup style="margin-right: 3px;margin-left:-3px;">&reg;</sup>to tap
+                onto Sydney trains and ferries? Register
+                below for your
+                chance
+                to win the ultimate Rugby World Cup 2019<sup>TM</sup> experience to see the Australia v Wales match in
+                Tokyo stadium.</p>
+        </div>
+        <div class="body-bototm">
+            <div class="setheight"><span class="error" id="firstNameError">Incorrect format. Only letters
+                    allowed.</span></div>
+            <input type="text" class="input-style" placeholder="First name" id="firstName" autocomplete="off" />
+            <div class="setheight"><span class="error" id="lastNameError">Incorrect format. Only letters allowed.</span>
+            </div>
+            <input type="text" class="input-style" placeholder="Last name" id="lastName" autocomplete="off" />
+            <div class="setheight"><span class="error" id="phoneError">Incorrect format. Only letters allowed.</span>
+            </div>
+            <input type="text" class="input-style" placeholder="Phone" id="phone" autocomplete="off" />
+            <div class="setheight"><span class="error" id='emailError'>Incorrect format. Only letters allowed.</span>
+            </div>
+            <input type="text" class="input-style" placeholder="Email" id="email" autocomplete="off" />
+            <div class="setheight"><span class="error" id='postcodeError'>Incorrect format. Only letters allowed.</span>
+            </div>
+            <input type="text" class="input-style" placeholder="Postcode" id="postcode" autocomplete="off" />
+            <div style="margin-top:0.25rem;">
+                <div class="setheight"><span class="error" id='agreeError'>Please read terms and conditions and select
+                        agree to proceed.</span></div>
+                <div class="agree">
+                    <input type="checkbox" id="agree" />
+                    <span>I agree to the
+                        <a class="TNC"
+                            href="https://www.mastercard.com.au/en-au/consumers/offers-promotions/rugby-australia/terms-conditions.html"
+                            target="_blank">
+                            <u>Terms and Conditions</u>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="verification">
+                <div class="sign-in">
+                    I am not a Robot.
+                </div>
+                <div id="mpanel"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="button-style">Submit</button>
+            <div class="buttom-character">The Rugby World Cup 2019 logo TM © Rugby World Cup Limited 2015. All rights
+                reserved. Mastercard is a registered trademark, 
+                and the circles design is a trademark of Mastercard International Incorporated.</div>
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="dialog-title">
+            <span>×</span>
+        </div>
+        <div class="dialog-container-body">
+            <div class="dialog-container">Register Successfully!</div>
+        </div>
+    </div>
+
+    <div class="dialog2">
+        <div class="dialog-title">
+            <span>×</span>
+        </div>
+        <div class="dialog-container-body">
+            <div class="dialog-container">Register Successfully!</div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/jquery-tap.js"></script>
+<script src="./js/verify.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/mobile.js"></script>
+</html>
